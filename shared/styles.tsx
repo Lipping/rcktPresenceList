@@ -3,13 +3,19 @@ import { css, Global } from '@emotion/react';
 export const globalStyles = (
   <Global
     styles={css`
-      html,
-      body {
+
+      * {
         margin: 0;
-        background: papayawhip;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+
+      html 
+      ,body{
         min-height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
       }
     `}
   />
